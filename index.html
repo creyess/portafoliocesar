@@ -7,12 +7,10 @@
 	
 <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-custom.css" rel="stylesheet">
-	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-	
-<link href="css/jquery.fancybox.min.css" rel="stylesheet">
-	
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
 	
 <link href="css/style.css" rel="stylesheet">
 	
@@ -171,8 +169,34 @@
 	
 	<section id="sec-servicios">
 		<h1 class="titulo">Servicios</h1>
-		<div>
-			<img src="img/camera-541213_960_720.jpg" alt="Fotografía" class="img-fluid" width="700px" height="270px;">
+		<div class="row">
+			<article class="col-md-12 col-sm-12 col-xs-12">
+					<div class="info-clase">
+						<img src="img/Fotografía.jpg" alt="foto" class="img-fluid" height="300px">
+						<div class="info-texto">
+							<h3><a href="#">Fotografía</a></h3>
+						</div>
+					</div>
+				</article>
+				
+				<article class="col-md-12 col-sm-12 col-xs-12">
+					<div class="info-clase">
+						<img src="img/Cine.jpg" alt="Video" class="img-fluid" height="300px">
+						<div class="info-texto">
+							<h3><a href="#">Video</a></h3>
+						</div>
+					</div>
+				</article>
+				
+				<article class="col-md-12 col-sm-12 col-xs-12">
+					<div class="info-clase">
+						<img src="img/animación.jpg" alt="Animación" class="img-fluid" height="300px">
+						<div class="info-texto">
+							<h3><a href="#">Animación</a></h3>
+						</div>
+					</div>
+				</article>
+			
 		</div>
 	</section>
 	
@@ -187,6 +211,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	
 	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/jquery.nav.js"></script>
@@ -206,6 +231,28 @@
                 scrollSpeed: 2000,
                 easing: 'easeOutQuad'
         });
+		
+		$(".app-carousel").owlCarousel({
+				items: 1,
+				loop: true,
+				autoplay: true,
+				smartSpeed: 800,
+				margin: 30,
+				center: true,
+				dots: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					480: {
+						items: 2
+					},
+					992: {
+						items: 3
+					}
+				}
+			});
+
 	});
 	</script>
 	
